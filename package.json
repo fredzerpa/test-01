@@ -1,0 +1,21 @@
+{
+  "name": "test-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm start --prefix server",
+    "client": "npm start --prefix client",
+    "server": "npm run watch --prefix server",
+    "watch": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "install-client": "npm install --prefix client",
+    "install-server": "npm install --prefix server",
+    "install": "npm run install-server && npm run install-client",
+    "deploy": "npm run build --prefix client && npm start --prefix server"
+  },
+  "author": "Fred Zerpa Gil <fredzerpa@gmail.com> (https://github.com/fredzerpa/)",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.2.2"
+  }
+}

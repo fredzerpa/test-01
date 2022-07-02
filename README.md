@@ -1,0 +1,154 @@
+# Test 01
+
+This challenge had a deadline of 48 hours.
+
+## Instructions
+
+`Backend`
+
+Crear una API en nodeJS que tenga las siguientes rutas para obtener información de un cliente, las rutas deberán ser:
+GET - Obtener lista de todos los clientes
+GET - Obtener cliente en base a su id
+POST - Crear cliente con los 5 campos, para la imagen usar una URL en un input tipo texto
+DELETE - Eliminar cliente (será eliminado solo del arreglo)
+
+La base de datos será el siguiente arreglo, el cual puede ser una simple variable en NodeJS
+
+```json
+[
+  {
+    "id": 1,
+    "first_name": "Guy",
+    "last_name": "Jirieck",
+    "email": "gjirieck0@over-blog.com",
+    "gender": "Male",
+    "image": "https://robohash.org/enimautculpa.png?size=50x50&set=set1"
+  },
+  {
+    "id": 2,
+    "first_name": "Michel",
+    "last_name": "Yakubov",
+    "email": "myakubov1@facebook.com",
+    "gender": "Male",
+    "image": "https://robohash.org/similiqueipsameaque.png?size=50x50&set=set1"
+  },
+  {
+    "id": 3,
+    "first_name": "Rafaelia",
+    "last_name": "Limpkin",
+    "email": "rlimpkin2@elpais.com",
+    "gender": "Female",
+    "image": "https://robohash.org/aliquidquasiassumenda.png?size=50x50&set=set1"
+  },
+  {
+    "id": 4,
+    "first_name": "Krishnah",
+    "last_name": "Lannin",
+    "email": "klannin3@cbsnews.com",
+    "gender": "Male",
+    "image": "https://robohash.org/placeatdebitissuscipit.png?size=50x50&set=set1"
+  },
+  {
+    "id": 5,
+    "first_name": "Maurise",
+    "last_name": "Logg",
+    "email": "mlogg4@ft.com",
+    "gender": "Male",
+    "image": "https://robohash.org/voluptatesetest.png?size=50x50&set=set1"
+  },
+  {
+    "id": 6,
+    "first_name": "Bobbee",
+    "last_name": "Jereatt",
+    "email": "bjereatt5@nsw.gov.au",
+    "gender": "Female",
+    "image": "https://robohash.org/autvoluptatemfugit.png?size=50x50&set=set1"
+  },
+  {
+    "id": 7,
+    "first_name": "Rossy",
+    "last_name": "Dicky",
+    "email": "rdicky6@blogs.com",
+    "gender": "Male",
+    "image": "https://robohash.org/erroromnisplaceat.png?size=50x50&set=set1"
+  },
+  {
+    "id": 8,
+    "first_name": "Adrian",
+    "last_name": "Birds",
+    "email": "abirds7@sakura.ne.jp",
+    "gender": "Male",
+    "image": "https://robohash.org/corporistotamest.png?size=50x50&set=set1"
+  },
+  {
+    "id": 9,
+    "first_name": "Phillip",
+    "last_name": "Stovine",
+    "email": "pstovine8@amazonaws.com",
+    "gender": "Male",
+    "image": "https://robohash.org/laborenihilaut.png?size=50x50&set=set1"
+  },
+  {
+    "id": 10,
+    "first_name": "Dynah",
+    "last_name": "Fitzackerley",
+    "email": "dfitzackerley9@seesaa.net",
+    "gender": "Female",
+    "image": "https://robohash.org/temporibusvoluptasmagni.png?size=50x50&set=set1"
+  }
+]
+```
+
+`Frontend`
+
+En el frontend se creará una vista sencilla utilizando alguna de las siguientes tecnologías:
+
+AngularJS
+Angular 2+
+ReactJS
+
+La aplicacion debera de contar con al menos tres vistas que serán:
+Lista de clientes
+Ver detalle de cliente
+Crear cliente
+
+Las vistas de lista y detalle deberán de mostrar la imagen en un img
+La vista de crear cliente no requiere que tenga alguna validación en los datos (lo cual es opcional si se quiere agregar) solo inputs de tipo texto
+
+Es importante que se haga uso del ruteo para las 3 vistas:
+
+/customers - Para lista de clientes (se puede usar / para esta ruta si se desea como la default)
+/customers/1 - Para cliente detalle
+/customers/create - Para crear un cliente
+
+Notas finales.
+
+Se tomará en cuenta el acomodo de los archivos y directorios, así como nombres de variables.
+
+## Getting Started
+
+1. Ensure you have Node.js installed.
+2. Create a `client/.env` file with a `REACT_APP_API_BASE_URL` property set to connect with the Server API.
+3. In the terminal, run: `npm install`
+
+## Running the Project
+
+1. In the terminal, run: `npm run deploy`
+2. Browse to the mission control frontend at [localhost:8000](http://localhost:8000) and start creating customers!
+
+## Technologies
+
+`BackEnd`
+
+- [Node](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [AJV](https://www.npmjs.com/package/ajv)
+- [CORS](https://www.npmjs.com/package/cors)
+- [Nodemon](https://nodemon.io/)
+
+`FrontEnd`
+
+- [Create React App](https://reactjs.org/docs/create-a-new-react-app.html)
+- [React Router DOM](https://reactrouter.com/)
+- [Material-UI (MUI)](https://mui.com/)
+- [Axios](https://axios-http.com/)

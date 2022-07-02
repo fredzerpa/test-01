@@ -1,0 +1,21 @@
+{
+  "name": "test-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "watch": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "Fred Zerpa Gil <fredzerpa@gmail.com> (https://github.com/fredzerpa/)",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^8.11.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}
